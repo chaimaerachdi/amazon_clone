@@ -1,4 +1,4 @@
-.video-grid{
+.product-grid{
     /* background-color: blue; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -53,19 +53,19 @@
     height: 50px;
 }
 @media(max-width:570px){
-    .video-grid{
+    .product-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
 @media(min-width:570px) and (max-width:800px){
-    .video-grid{
+    .product-grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 @media(min-width:800px) and (max-width:1000px){
-    .video-grid{
+    .product-grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
