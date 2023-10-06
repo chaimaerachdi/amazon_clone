@@ -1,0 +1,122 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(19, 25, 33);;
+}
+/* sections */
+.left-section{
+    width: 200px;
+    /* background-color: red; */
+
+}
+.middle-section{
+    flex:1;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+}
+.right-section{
+    width: 200px;
+    /* background-color: greenyellow; */
+    display: flex;
+    align-items: center;
+}
+/* 1 st section elements  */
+.amazon-icon{
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 13px;
+    margin-top: 3px;
+    cursor: pointer;
+    /* background-color: aquamarine; */
+}
+.amazon-icon:hover{
+    border: 1px solid white;
+}
+.middle-section input{
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.15);
+    border: none;
+    height: 41px;
+    margin-left: 10px;
+    /* width: 0; */
+    flex: 1;
+    border-top-left-radius: 5px;    
+    border-bottom-left-radius: 5px;    
+}
+.middle-section input::placeholder{
+    padding-left: 10px;
+    font-size: 16px;
+}
+.middle-section input:active{
+    border: 2px solid rgb(212, 138, 0);
+}
+.product-search-button{
+    background-color: rgb(255, 203, 106);
+    width: 50px;
+    height: 43px;
+    margin-left: -1px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+.product-search-icon{
+    width: 24px;
+    vertical-align: center;
+}
+.returns-orders-container{
+    /* background-color: beige; */
+    width: 90px;
+    font-size: 15px;
+    color: white;
+    margin-left: 15px;
+    margin-right: 7px;
+    padding-left: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    cursor: pointer;
+    
+}
+.returns-orders-container:hover{
+    border: 1px solid white;
+}
+.cart-container{
+    /* background-color: blueviolet; */
+    width: 100px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+
+}
+.cart-container img{
+    height: 35px;
+    width: 50px;
+    margin-left: 2px;
+}
+.cart-count{
+    position: absolute;
+    color: rgb(225, 146, 0);
+    font-size: 19px;
+    top: 5px;
+    right: 50px;
+}
+.cart-container:hover{
+    border: 1px solid white;
+}
+
