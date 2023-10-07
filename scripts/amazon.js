@@ -45,6 +45,7 @@ document.querySelectorAll('.js-add-to-cart-button')
   .forEach((add_to_cart_button,index)=>{
     add_to_cart_button.addEventListener('click',()=>{
        let matchingItem;
+       let cartQuantity=0;
        const productId=add_to_cart_button.dataset.productId;
       
        cart.forEach((item)=>{
@@ -61,8 +62,17 @@ document.querySelectorAll('.js-add-to-cart-button')
             // element does not exist in the cart =>create a new item(ibject) in the cart list 
             cart.push({productId:productId,
                         quantity:1
-                      });
+            });
        }
-       console.log(cart);
+
+    //    calculate the total qte 
+    cart.forEach((item)=>{
+        cartQuantity+=item.quantity;
+    });
+    document.querySelector('.js-cart-quantity')
+            .innerHTML=cartQuantity;
+
+    //    console.log(cartQuantity);
+    //    console.log(cart);
     });
 });
